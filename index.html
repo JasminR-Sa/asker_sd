@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="favicon" type="image/png" href="images\main-logo2.png">
+  <link href="https://fonts.googleapis.com/css?family=Trocchi|Copse" rel="stylesheet">
+  <title>Asker SD</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="#"><img class="logo" src="images\main-logo2.png" alt="logo"></a>
+         <span class="open-slide">
+           <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#247" stroke-width="5"/>
+              <path d="M0,14 30,14" stroke="#247" stroke-width="5"/>
+              <path d="M0,23 30,23" stroke="#247" stroke-width="5"/>
+            </svg>
+         </a>
+       </span>
+          <ul class="navbar-nav">
+            <li><a id="active" href="index.html">home</a></li>
+            <li><a href="#">planinarska sekcija</a></li>
+            <li><a href="#">airsoft</a></li>
+            <li><a href="#">combat systems</a></li>
+            <li><a href="#">prijavi se</a></li>
+            <li><a href="#">registruj se</a></li>
+           </ul>
+      </nav>
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <li><a><img id="logo" class="logo" src="images\main-logo.jpg" alt="logo" width="80px"></a></li>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">planinarska sekcija</a></li>
+        <li><a href="#">airsoft</a></li>
+        <li><a href="#">combat systems</a></li>
+        <li><a href="#">prijavi se</a></li>
+        <li><a href="#">registruj se</a></li>
+      </div>
+      <div class="header-txt animated zoomInDown">
+        <h1>ASKER BIH</h1>
+        <h4>UDRUŽENJE ZA RAZVOJ FIZIČKIH I POZITIVNIH MORALNIH OSOBINA</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img src="images\main-logo2.png" alt="Logo">
+      </div>
+    </header>
+    <!-- End of header -->
+    <!-- Secton planinarska sekcija -->
+   <section class="content">
+     <div class="column post">
+      <div class="planin-img planin-shadow"></div>
+     </div>
+      <div class="content-txt post">
+        <h2>Planinarska sekcija</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a class="button" href="#">Posjetite nas</a>
+      </div>
+   </section>
+    <!-- end of secton planinarska sekcija -->
+   <!-- Secton Airsoft sekcija -->
+  <section class="content">
+    <div class="column post">
+     <div class="airsoft-img airsoft-shadow"></div>
+    </div>
+     <div class="content-txt post">
+       <h2>Airsoft sekcija</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a class="button" href="#">Posjetite nas</a>
+     </div>
+  </section>
+  <!-- end of Airsoft sekcija -->
+  <!-- Secton Combat systems -->
+ <section class="content">
+   <div class="column post">
+    <div class="combat-img combat-shadow"></div>
+   </div>
+    <div class="content-txt post">
+      <h2>Combat systems</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a class="button" href="#">Posjetite nas</a>
+    </div>
+ </section>
+ <!-- end of Combat systems -->
+   <!-- Footer secton  -->
+    <footer class="footer">
+		 <p>Copyright 2018 JasminR</p>
+	  </footer>
+     <!-- end of footer secton -->
+  </div>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

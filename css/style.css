@@ -1,0 +1,469 @@
+/* ====== NAV STYLES ====== */
+body{
+ font-family: 'Copse';
+}
+/* ====== NAV STYLES ====== */
+.container{
+  position: relative;
+}
+.header{
+  position: relative;
+  background: url(/images/banner.jpg) right no-repeat;
+  background-size: cover;
+  height: 800px;
+  margin-bottom: 100px;
+}
+.header:before, .header:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.header:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.navbar{
+  max-width: 1200px;
+  overflow: hidden;
+  mask-image: linear-gradient(80deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.navbar ul{
+ text-align: center;
+ background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 35, 122, 0.2) 25%, rgba(0, 35, 122, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+}
+.navbar ul li {
+  display: inline-block;
+}
+.navbar ul li a{
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(33, 33, 33, 0.8);
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+.navbar a:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+.navbar a:active{
+  color: rgba(0, 35, 122, 0.7);
+}
+.navbar ul li #active{
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2), inset 0 0 1px rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+.navbar .logo{
+  float: left;
+  width: 85px;
+  padding: 2px;
+  margin-left: 7px;
+}
+.navbar .logo:hover{
+  box-shadow: none;
+  background: none;
+}
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+.side-nav a:hover{
+  color: rgb(0, 35, 122);
+}
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+.header-txt{
+  width: 80%;
+  height: 70%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  margin-top: 3%;
+  text-align: center;
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 10px;
+  text-shadow: 1px 0px 0px rgba(33, 33, 33,0.9);
+}
+.header-txt h1{
+  font-size: 2.5em;
+}
+.header-txt h4{
+  color: rgba(0, 35, 122, 0.7);
+  font-size: 15px;
+  padding: 0px;
+}
+.header-txt p{
+  font-size: 15px;
+  padding: 20px 20px;
+  line-height: 1.3em;
+}
+.header-txt img{
+  width: 30%;
+  padding: 10px;
+}
+/* ====== MEDIA QUERIES FOR HEADER SECTION ====== */
+@media(max-width:768px){
+  .navbar-nav{display:none;}
+  .navbar a:hover{box-shadow: none;}
+  .open-slide{float: right; margin: 25px 20px 0 2px;}
+  .header-txt p{font-size: 16px; line-height: 1.5em;}
+}
+
+@media(min-width:768px){
+  .open-slide{display:none;}
+  .header-txt img{width: 24%;}
+  .navbar{padding: 20px 0;}
+  .navbar ul li a{padding: 10px; font-size: 15px;}
+  .header-txt{ margin-top: 2%;}
+  .header-txt p{font-size: 17px; padding: 20px 30px; line-height: 1.6em;}
+  .header-txt h1{font-size: 3.5em;}
+}
+
+@media(max-width:420px){
+  .header-txt h1{
+    font-size: 2.0em;
+  }
+  .header-txt p{
+    font-size: 16px;
+    padding: 8px 0px;
+    line-height: 1.4em;
+  }
+  .header-txt img{
+    width: 40%;
+    padding: 5px;
+  }
+}
+@media(min-width:1200px){
+  .header-txt img{width: 20%;}
+  .navbar ul li a{padding: 10px; font-size: 18px;}
+  .header-txt p{font-size: 16px; padding: 30px 60px; line-height: 1.5rem;}
+}
+/* ====== PLAININARSKA SEKCIJA STYLES ====== */
+.content1{
+ /* height: 800px; */
+}
+.planin-img{
+  width: 90%;
+  height:200px;
+  background-color:white;
+  margin:50px 5% 30px 5%;
+  border-radius:5px;
+  background-image: url(/images/planinarska_sekcija.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.planin-shadow{
+  position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.planin-shadow:before, .planin-shadow:after{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.planin-shadow:after{
+  right:10px;
+  left:auto;
+ -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+     -ms-transform:skew(8deg) rotate(3deg);
+      -o-transform:skew(8deg) rotate(3deg);
+         transform:skew(8deg) rotate(3deg);
+}
+
+.content-txt{
+  width: 70%;
+  background: linear-gradient(90deg, rgba(91, 91, 91, 0) 0%, rgba(91, 91, 91, 0.2) 25%, rgba(91, 91, 91, 0.2) 75%, rgba(91, 91, 91, 0) 100%);
+  margin: 0 auto;
+  margin-top: 3%;
+  text-align: center;
+  color: rgb(37, 37, 84);
+  font-weight: bold;
+  font-size: 1em;
+  padding: 5px;
+  text-shadow: 1px 0px 0px rgba(32, 32, 48,0.9);
+}
+.content-txt .button{
+  background-color: rgba(0, 35, 122, 0.7);
+  padding: 10px;
+  color: rgb(252,252,252);
+  border-radius: 6px;
+  display: block;
+  margin: 20px auto;
+  text-decoration: none;
+}
+.content-txt .button:hover{
+  color: rgba(0, 35, 122, 0.7);
+  padding: 10px;
+  border: solid 1px rgba(0, 35, 122, 0.7);
+  background-color: rgb(252,252,252)
+}
+/* ====== MEDIA QUERIES FOR PLANINARSKA SEKCIJA ====== */
+@media(min-width:560px){
+   .planin-img{
+      width: 50%;
+      margin: 50px auto;
+   }
+   .content-txt .button{
+     width: 50%;
+   }
+   .content-txt{
+     width: 60%;
+     font-size: 1.1em;
+   }
+}
+@media(min-width:768px){
+    .content{
+     -ms-box-orient: horizontal;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-direction: row;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     padding: 20px;
+    }
+    .column{
+      flex: 1;
+      margin: 30px 3%;
+    }
+    .planin-img {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    margin: 20px 3%;
+  }
+    .content-txt{
+    flex: 1;
+    box-sizing: border-box;
+    margin: 250px 5% 100px 5%;
+    font-size: 1.2em;
+    padding: 10px 15px 20px 15px;
+  }
+  .content-txt h2{
+    font-size: 1.8em;
+  }
+  .content-txt .button{
+    width: 30%;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+@media(min-width:1200px){
+  .content{
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+   .planin-img {
+   width: 350px;
+   height: 350px;
+ }
+  .column{
+    margin: 50px auto;
+  }
+  .content-txt{
+    padding: 10px 40px 15px 40px;
+  }
+}
+/* ====== AIRSOFT SECTION STYLES ====== */
+.content2{
+ /* height: 800px; */
+}
+.airsoft-img{
+  width: 90%;
+  height:200px;
+  background-color:white;
+  margin:50px 5% 30px 4%;
+  border-radius:5px;
+  background-image: url(/images/airsoft-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.airsoft-shadow{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.airsoft-shadow:after
+{
+  z-index: -1;
+position: absolute;
+content: "";
+bottom: 15px;
+left: 10px;
+width: 50%;
+top: 80%;
+max-width:300px;
+background: #777;
+-webkit-box-shadow: 0 15px 10px #777;
+-moz-box-shadow: 0 15px 10px #777;
+box-shadow: 0 15px 10px #777;
+-webkit-transform: rotate(-3deg);
+-moz-transform: rotate(-3deg);
+-o-transform: rotate(-3deg);
+-ms-transform: rotate(-3deg);
+transform: rotate(-3deg);
+}
+
+/* ====== MEDIA QUERIES FOR AIRSOFT SECTION ====== */
+@media(min-width:560px){
+   .airsoft-img{
+      width: 50%;
+      margin: 50px auto;
+   }
+}
+@media(min-width:768px){
+    .airsoft-img {
+    box-sizing: border-box;
+    width: 350px;
+    height: 350px;
+    margin: 20px 3%;
+  }
+}
+/* ====== COMBAT SYSTEMS STYLES ====== */
+.content3{
+ /* height: 800px; */
+}
+.combat-img{
+  width: 90%;
+  height:200px;
+  background-color:white;
+  margin:50px 5% 30px 5%;
+  border-radius:5px;
+  background-image: url(/images/combat-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.combat-shadow{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.combat-shadow:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+/* ====== MEDIA QUERIES COMBAT SYSTEMS ====== */
+@media(min-width:560px){
+   .combat-img{
+      width: 50%;
+      margin: 50px auto;
+   }
+}
+@media(min-width:768px){
+    .combat-img {
+    box-sizing: border-box;
+    width: 350px;
+    height: 350px;
+    margin: 20px 3%;
+  }
+}
+
+/* ====== FOOTER STYLES ====== */
+.footer{
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(0, 35, 122, 0.7);
+  color: white;
+  height: 100px;
+}
+.footer p{
+  padding-top: 40px;
+}
+/* ====== ANIMATION STYLES ====== */
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
